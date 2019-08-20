@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+<html lang="en-US">
+<script src="js/angular.min.js"></script>
+<body>
+
+<div ng-app="">
+  <p><b>Name : </b><input type="text" ng-model="name"></p>
+  <p><b>Age : </b><input type="number" ng-model="age"></p>
+  <form><b>Gender : </b>
+	<p><input type="radio" ng-model="gender" value="0">Female</p>
+	<p><input type="radio" ng-model="gender" value="1">Male</p>
+  </form>
+  <form><b>Chest pain type : </b>
+	<p><input type="radio" ng-model="cp" value="0">Typical angina</p>
+	<p><input type="radio" ng-model="cp" value="1">Atypical angina</p>
+	<p><input type="radio" ng-model="cp" value="2">Non-anginal pain</p>
+	<p><input type="radio" ng-model="cp" value="3">Asymptomatic</p>
+  </form>
+  <p><b>Resting BP : </b><input type="number" ng-model="rbp"></p>
+  <p><b>Serum cholestoral : </b><input type="number" ng-model="chol"></p>
+  <form><b>Fasting blood sugar : </b>
+	<p><input type="radio" ng-model="fbs" value="true"> >120mg/dl </p>
+	<input type="radio" ng-model="fbs" value="false"> <120mg/dl </p>
+  </form>
+  <button> SUBMIT </button>
+</div>
+
+</body>
+</html>
